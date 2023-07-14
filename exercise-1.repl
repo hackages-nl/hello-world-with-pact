@@ -1,0 +1,6 @@
+(begin-tx)
+(load "hello-world.pact")
+
+(expect "Should say hello world..." "Hello world, Davy" (helloworld.hello "Davy"))
+
+(commit-tx)
